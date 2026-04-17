@@ -1,0 +1,85 @@
+/* Configurações de cores (Variáveis) */
+:root {
+    --bg-body: #ffffff;
+    --bg-header: #808080; /* Cinza do desenho */
+    --text-color: #000000;
+    --logo-color: #ff0000; /* Vermelho do desenho */
+}
+
+/* Cores quando o Modo Escuro estiver ativo */
+body.dark-mode {
+    --bg-body: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+header {
+    background-color: var(--bg-header);
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--logo-color);
+}
+
+.container {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.cartaz-box {
+    border: 2px solid var(--text-color);
+}
+
+.cartaz-box img {
+    width: 200px;
+    display: block;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-trailer {
+    background-color: var(--logo-color);
+    border: none;
+}
+
+.btn-trailer a {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
